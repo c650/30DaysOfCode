@@ -7,7 +7,7 @@ int hourglass(vector< vector <int> >& arr) {
     // store dimensions of 2D vector 
     int n = arr.size(), o = arr[0].size();
     
-    vector<int> ans;
+    int max = 0;
     // i < n - 2 because hourglass seeks
     // 2 below; j < o -2 because 2 to the right
     for (int i = 0; i < n - 2; i++) {
@@ -22,12 +22,12 @@ int hourglass(vector< vector <int> >& arr) {
             
             // read that element in the middle
             sum += arr[i+1][j+1];
-            
-            ans.push_back(sum);
+            // more efficient than storing all sums in vector
+            if (sum > max) max = sum;
         }
     }
     
-    return *max_element(ans.begin(), ans.end());
+    return max;
 }
 int main(){
     vector< vector<int> > arr(6,vector<int>(6));
