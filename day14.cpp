@@ -19,19 +19,9 @@ class Difference {
         : elements(_elements), maximumDifference(0) {}
 
     void computeDifference() {
-        for (int i = 0, n = elements.size(); i < n; i++) {
-            
-            for (int j = i + 1; j < n; j++) {
-            
-                if (i == j) j++;
-                
-                int sum = abs(elements[i] - elements[j]);
-                
-                if (sum > maximumDifference) {
-                    maximumDifference = sum; 
-                }
-            } 
-        }
+        maximumDifference = 
+            *max_element(elements.begin(), elements.end())
+            - *min_element(elements.begin(), elements.end());
     }
 }; // End of Difference class
 
