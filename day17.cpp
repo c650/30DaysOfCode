@@ -33,11 +33,10 @@ int main() {
         	try {
                int ans=myCalculator.power(n,p);
                cout<<ans<<endl; 
-        	}
-         	catch(exception& e){
+        	} catch(exception& e){
             	cout<<e.what()<<endl;
          	}
-         	
+
       	}
     }
 }
