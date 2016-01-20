@@ -15,9 +15,9 @@ class Calculator : public AdvancedArithmetic {
     int divisorSum(int n) {
         if (n == 1) return n;
         int sum = 1 + n;
-        int t = 2;
-        while (t < n) {
-            if (n % t == 0) sum += t;
+        int t = 2, sqrtn = sqrt(n);
+        while (t <= sqrtn) {
+            if (n % t == 0) sum += (t + n/t);
             t++;
         }
         return sum;
