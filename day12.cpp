@@ -1,3 +1,14 @@
+/******************************************
+
+        30 Days of Code Submission
+
+        @author Charles Bailey
+
+        Licensed under MIT License
+
+******************************************/
+./t.txt
+./t.txt
 #include <cmath>
 #include <cstdio>
 #include <vector>

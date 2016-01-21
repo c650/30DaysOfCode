@@ -1,3 +1,12 @@
+/******************************************
+
+        30 Days of Code Submission
+
+        @author Charles Bailey
+
+        Licensed under MIT License
+
+******************************************/
 class Person{
 public:
    int age ;

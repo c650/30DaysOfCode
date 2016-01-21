@@ -1,3 +1,12 @@
+/******************************************
+
+        30 Days of Code Submission
+
+        @author Charles Bailey
+
+        Licensed under MIT License
+
+******************************************/
 #include <iostream>
 #include <cstddef>
 using namespace std;	
