@@ -31,8 +31,7 @@ void Person::amIOld(){
         cout << "You are old." << endl;
     }
 }
-    
 
 void Person::yearPasses(){
     age++;
-}
+  }
